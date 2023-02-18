@@ -1,4 +1,4 @@
-package pack;
+package task1;
 
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;
@@ -25,7 +25,7 @@ public class Main {
     }
 
     static Thread threadMaker(Random random, Resources res, CountDownLatch latch) {
-        int choose = random.nextInt(0, 5);
+        int choose = random.nextInt(0, 5); //тут поставил от 0 до 5 чтобы было больше числовых потоков
         if (choose == 0) return new ManagerThread(latch);
         else return new NumericThread(res, latch);
 

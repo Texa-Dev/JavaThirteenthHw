@@ -1,4 +1,4 @@
-package pack;
+package task1;
 
 import java.util.concurrent.CountDownLatch;
 
